@@ -1,0 +1,81 @@
+body {
+    background-image: url(https://wallsbazar.com/wp-content/uploads/2021/08/Minecraft-Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Minecraft', sans-serif;
+}
+
+#Minecraft_logo {
+    /*background-color: red;*/
+    text-align: center;
+}
+
+#contenu {
+    background-color: #266e08;
+    border-radius: 35px;
+    text-align: center;
+    
+    min-height: 170px;
+    padding: 10px;
+    margin: 4%;
+    display: inline-block;
+
+}
+
+.nameinput {
+    border-width: thick;
+    background-color: lightgray;
+    text-align: center;
+    width: -webkit-fill-available;
+    outline: none;
+}
+
+.Case {
+    color: white;
+    padding: 15px;
+    background-size: 100%;
+    background-color: #684527;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    float: left;
+    border: outset 5px lightgray;
+    /*
+    display: flex;
+    flex-direction: column;
+    text-align: center;*/
+}
+
+button, select, input{
+    color: #1a1f23;
+    border-width: thick;
+    border: inset 5px gray;
+    background-color: lightgray;
+    text-align: center;
+    outline: none;
+    font-family: 'Minecraft', sans-serif;
+    padding: 1px 5px 3px;
+}
+
+button:hover, select:hover, input:hover {
+    color: white;
+    border: outset 5px;
+    background-color: darkgrey;
+    padding: 1px 5px 3px;
+    
+}
+
+/*button, select, input, p {
+}*/
+/*
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+img, p, select {
+    margin-top: auto;
+}
+*/
