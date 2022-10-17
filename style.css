@@ -13,14 +13,18 @@ body {
 }
 
 #contenu {
-    background-color: #266e08;
-    border-radius: 35px;
+    background-color: #5a8c2d;
     text-align: center;
     
     min-height: 170px;
     padding: 10px;
     margin: 4%;
     display: inline-block;
+
+    border-radius: 10px;
+    border: solid;
+    border-color: #266e08;
+    border-width: thick;
 
 }
 
@@ -67,6 +71,24 @@ button:hover, select:hover, input:hover {
     
 }
 
+#fullscreen {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+@font-face{
+    font-family:minecraft;
+    font-style:normal;
+    font-weight:400;
+    src:local('Minecraft'),
+    url(https://fonts.cdnfonts.com/s/36662/MinecraftTen-VGORe.woff) format('woff')
+}
+*/
+
+
+
 /*button, select, input, p {
 }*/
 /*
@@ -79,3 +101,4 @@ img, p, select {
     margin-top: auto;
 }
 */
+
