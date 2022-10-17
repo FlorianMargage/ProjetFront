@@ -166,10 +166,24 @@ function setImage(url) {
     let img = document.createElement("img")
     img.setAttribute("src", url)
     img.setAttribute('alt', 'na')
-    img.setAttribute("height", "25px")
-    img.setAttribute("width", "25px")
+    img.setAttribute("height", "35%")
+    img.setAttribute("width", "auto")
 
     return img
+}
+
+function swapFullscreen() {
+    el = document.getElementById("fullscreen")
+    
+    if (el.textContent == "Fullscreen : off") {
+        openFullscreen()
+        el.textContent = "Fullscreen : on";
+    }
+    
+    else {
+        closeFullscreen()
+        el.textContent = "Fullscreen : off"
+    }
 }
 
 class Mob {
@@ -179,19 +193,44 @@ class Mob {
             this.name = "Creeper"
             this.type = "Creeper"
             //this.url = "https://m.media-amazon.com/images/I/71gxSPpUmVL._AC_SX522_.jpg"
-            this.url = "https://static.wikia.nocookie.net/minecraft_fr_gamepedia/images/0/0a/Creeper.png/revision/latest?cb=20180615142704"
+            this.url = "./img/mob/Creeper.png"
         }
 
         else if (id == 2) {
             this.name = "Squelette"
             this.type = "Squelette"
-            this.url = "https://minecraft-heads.com/media/k2/items/cache/f89028c31c66001585f476905f4afb25_Generic.jpg"
+            this.url = "./img/mob/Squelette.png"
         }
 
         else if (id == 3) {
             this.name = "Zombi"
             this.type = "Zombi"
-            this.url = "https://minecraft-heads.com/media/k2/items/cache/8cdfe61457f16442e8acf54df5822c40_M.jpg"
+            this.url = "./img/mob/Zombi.png"
         }
     }    
+}
+
+/*Fullscreen*/
+var elem = document.documentElement;
+
+/* View in fullscreen */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
 }
